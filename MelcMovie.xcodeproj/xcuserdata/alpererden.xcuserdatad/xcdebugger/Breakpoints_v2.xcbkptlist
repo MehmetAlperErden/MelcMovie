@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DCADC2D9-F343-4120-A463-30C35EEECFA4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C25A28D5-5383-4C8B-80B4-61420ABE7219"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MelcMovie/Core/HomeScreen/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "getMovies()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C25A28D5-5383-4C8B-80B4-61420ABE7219 - e4f318d23dc6ca04"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MelcMovie.HomeViewModel.getMovies() -&gt; ()"
+                  moduleName = "MelcMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alpererden/Desktop/New%20Apps/MelcMovie/MelcMovie/Core/HomeScreen/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "C25A28D5-5383-4C8B-80B4-61420ABE7219 - 85b0e32e192c0485"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;MelcMovie.MovieResult&gt;&gt;) -&gt; () in MelcMovie.HomeViewModel.getMovies() -&gt; ()"
+                  moduleName = "MelcMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alpererden/Desktop/New%20Apps/MelcMovie/MelcMovie/Core/HomeScreen/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F9DCFFA-D94A-4F39-A0F1-1CE389F5691F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MelcMovie/Service/MovieService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "downloadUrl(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72FC40D7-0CD1-4A3F-AE84-DB132667B21C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MelcMovie/Service/MovieService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "downloadUrl(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
