@@ -23,6 +23,7 @@
 		BF5BDC122A03D2F700BE9811 /* CGFloat+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BDC112A03D2F700BE9811 /* CGFloat+Ext.swift */; };
 		BF5BDC142A03D68400BE9811 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BDC132A03D68400BE9811 /* MovieCell.swift */; };
 		BF5BDC162A03E75C00BE9811 /* PosterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BDC152A03E75C00BE9811 /* PosterImageView.swift */; };
+		BF5BDC182A09176100BE9811 /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BDC172A09176100BE9811 /* UICollectionView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		BF5BDC112A03D2F700BE9811 /* CGFloat+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Ext.swift"; sourceTree = "<group>"; };
 		BF5BDC132A03D68400BE9811 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		BF5BDC152A03E75C00BE9811 /* PosterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImageView.swift; sourceTree = "<group>"; };
+		BF5BDC172A09176100BE9811 /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			children = (
 				BF5BDC0D2A03CFF100BE9811 /* UIView+Ext.swift */,
 				BF5BDC112A03D2F700BE9811 /* CGFloat+Ext.swift */,
+				BF5BDC172A09176100BE9811 /* UICollectionView+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				BF5BDBE42A0285BC00BE9811 /* AppDelegate.swift in Sources */,
 				BF5BDC0E2A03CFF100BE9811 /* UIView+Ext.swift in Sources */,
 				BF5BDC062A029F2C00BE9811 /* APIUrls.swift in Sources */,
+				BF5BDC182A09176100BE9811 /* UICollectionView+Ext.swift in Sources */,
 				BF5BDBE62A0285BC00BE9811 /* SceneDelegate.swift in Sources */,
 				BF5BDC162A03E75C00BE9811 /* PosterImageView.swift in Sources */,
 				BF5BDC022A0297C700BE9811 /* Movie.swift in Sources */,

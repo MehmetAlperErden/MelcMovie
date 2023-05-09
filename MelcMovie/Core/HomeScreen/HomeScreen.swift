@@ -11,6 +11,7 @@ import SnapKit
 protocol HomeScreenInterface: AnyObject {
     func configureVC()
     func configureCollectionView()
+    func reloadCollectionView()
 }
 
 final class HomeScreen: UIViewController {
@@ -29,7 +30,6 @@ final class HomeScreen: UIViewController {
 }
 
 extension HomeScreen: HomeScreenInterface {
-    
     func configureCollectionView() {
         collectionView = UICollectionView(frame: .zero,collectionViewLayout: UIHelper.createHomeFlowLayout())
         collectionView.backgroundColor = .black
@@ -43,10 +43,12 @@ extension HomeScreen: HomeScreenInterface {
         }
     }
     
-    
-    
     func configureVC() {
         view.backgroundColor = .red
+    }
+    
+    func reloadCollectionView() {
+        collectionView.reloadMainThread()
     }
 }
 
@@ -62,5 +64,18 @@ extension HomeScreen: UICollectionViewDelegate,UICollectionViewDataSource {
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(APIUrls.detail(id: viewModel.movies[indexPath.item]._id))
+        viewModel.getDetails(id: viewModel.movies[indexPath.item]._id)
+    }
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+        let height = scrollView.frame.size.height
+        
+        if offsetY >= contentHeight - (2 * height){
+            viewModel.getMovies()
+        }
+    }
     
 }

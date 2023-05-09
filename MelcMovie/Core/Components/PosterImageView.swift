@@ -9,6 +9,8 @@ import UIKit
 
 class PosterImageView: UIImageView {
 
+   private var dataTask: URLSessionDataTask?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -17,17 +19,24 @@ class PosterImageView: UIImageView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func downloadImage(movie: MovieResult){
-        guard let url = URL(string: APIUrls.imageUrl(posterPath: movie.posterPath ?? movie._posterPath)) else {return}
-        URLSession.shared.dataTask(with: url) { data, _, _ in
-            guard let data = data else {return}
+    func downloadImage(movie: MovieResult) {
+            guard let url = URL(string: APIUrls.imageUrl(posterPath: movie._posterPath)) else { return }
             
-            DispatchQueue.main.async {
-                self.image = UIImage(data: data)
-            }            
-            
+            dataTask = NetworkManager.shared.download(url: url) { [weak self] result in
+                guard let self = self else { return }
+                
+                switch result {
+                case .success(let data):
+                    DispatchQueue.main.async { self.image = UIImage(data: data) }
+                case .failure(_):
+                    break
+                }
+            }
         }
-        .resume()
+    
+    func cancelDownloading(){
+        dataTask?.cancel()
+        dataTask = nil
     }
     
 }
